@@ -11,12 +11,12 @@ var typing = document.getElementById("typing").innerText;
 
 function keyPress() {
     if (event.keyCode == 13) {
-        var elim = event.target;
-        console.log(elim.value)
-        list.innerHTML += "<li class='user'>" + elim.value + "</li>"
+        var value = event.target.value;
+        console.log(value)
+        list.innerHTML += "<li class='user'>" + value + "</li>"
 
 
-        if (['hi', 'hello', 'hey', 'salam', 'assalamualaikum', 'Hi', 'Hey', 'oye', 'hai', 'baat sun', 'sune', 'information chaie'].indexOf(elim.value) !== -1) {
+        if (['hi', 'hello', 'hey', 'salam', 'assalamualaikum', 'Hi', 'Hey', 'oye', 'hai', 'baat sun', 'sune', 'information chaie'].indexOf(value.toLowerCase()) !== -1) {
 
             setTimeout(function () {
                  
@@ -31,7 +31,7 @@ function keyPress() {
             }, 4000)
 
         }
-        else if (['admission ha', 'admission chaie', 'i need addmission', 'admission open ha', 'admission milega ?', 'information chaie', 'admission lena tha', 'dakhla ha ?', 'admission kb open ha ?', 'admisssion hain', 'admission ha ?', 'admission karwana tha', 'admission ke bare me infomation lena tha', 'admission open ha ?', 'admission lena hain',].indexOf(elim.value) !== -1) {
+        else if (['admission ha', 'admission chaie', 'i need addmission', 'admission open ha', 'admission milega ?', 'information chaie', 'admission lena tha', 'dakhla ha ?', 'admission kb open ha ?', 'admisssion hain', 'admission ha ?', 'admission karwana tha', 'admission ke bare me infomation lena tha', 'admission open ha ?', 'admission lena hain',].indexOf(value.toLowerCase()) !== -1) {
 
 
             setTimeout(function () {
@@ -46,7 +46,7 @@ function keyPress() {
             }, 4000)
         }
 
-        else if (['graphic desighning', 'web development', 'web and development', 'web & development', 'vedio editing', 'animation', 'flutter', 'paython', 'techno kids', 'bike repairing', 'cctv', 'cyber secuirity'].indexOf(elim.value) !== -1) {
+        else if (['graphic desighning', 'web development', 'web and development', 'web & development', 'vedio editing', 'animation', 'flutter', 'paython', 'techno kids', 'bike repairing', 'cctv', 'cyber secuirity'].indexOf(value.toLowerCase()) !== -1) {
 
 
             setTimeout(function () {
@@ -57,7 +57,7 @@ function keyPress() {
 
         }
 
-        else if (['form', 'admission form', 'admission',].indexOf(elim.value) !== -1) {
+        else if (['form', 'admission form', 'admission',].indexOf(value.toLowerCase()) !== -1) {
 
 
             setTimeout(function () {
